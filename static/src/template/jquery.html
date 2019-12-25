@@ -7,12 +7,23 @@
 	<link href="/favicon.ico?rootId=rapserver" rel="shortcut icon">
 	<title>{{obj.document.title}}</title>
 	<include src="/template/head/css.html"></include>
-	<include src="/template/head/js.html"></include>
+	<script src="/js/lib/jquery-1.11.1.min.js"></script>
+	<script src="/js/lib/jquery.qrcode-0.12.0.min.js"></script>
 </head>
 <body>
-	<include src="/template/body/loading.html"></include>
-	<include src="/template/body/layout-header.html"></include>
 	<replaceWith id="root"></replaceWith>
-	<include src="/template/body/layout-footer.html"></include>
 </body>
 </html>
+<script>
+    $(function () {
+        $("#test").change(function () {
+            var url = $(this).val();
+            $("#code").qrcode({
+                render: "table", //table方式
+                width: 200, //宽度
+                height:200, //高度
+                text: url//任意内容
+            });
+        })
+    })
+</script>

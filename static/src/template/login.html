@@ -5,14 +5,12 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
 	<link href="/favicon.ico?rootId=rapserver" rel="shortcut icon">
-	<title>{{obj.document.title}}</title>
+	<title>{{document.title}}</title>
 	<include src="/template/head/css.html"></include>
 	<include src="/template/head/js.html"></include>
 </head>
 <body>
 	<include src="/template/body/loading.html"></include>
-	<include src="/template/body/layout-header.html"></include>
 	<replaceWith id="root"></replaceWith>
-	<include src="/template/body/layout-footer.html"></include>
 </body>
 </html>
