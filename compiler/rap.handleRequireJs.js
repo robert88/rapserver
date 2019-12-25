@@ -1,10 +1,9 @@
-const {resolve} = require("@/rap.alias.js");
 const wake = require("@/lib/rap.filesystem.js");
 const {parseRequire} = require("@/compiler/rap.parse.js");
 
 /*处理require js*/
 function handleRequireJs(code,toServerPath,requireCash) {
-    var requireArr = parseRequire(code);
+ var requireArr = parseRequire(code);
     requireCash = requireCash||{};
     requireArr.forEach(function (requireInfo) {
         var src = toServerPath(requireInfo.src);
@@ -56,28 +55,9 @@ function recordRequireIndex(requireUrl,requireCash) {
     return requireCash[requireUrl].index;
 
 }
-/***
-*打包js
- * */
-function packJs(code,toServerPath,packInfo){
-    var requireArr = parseRequire(code);
-    if(requireArr.length==0){
-        return code;
-    }
-    packInfo = packInfo||{};
-    var packArr = [];
-    code = handleRequireJs(code,toServerPath||resolve,packInfo);
-    delete packInfo.count;
-    for(var src in packInfo){
-        packArr[packInfo[src].index] = packInfo[src].raw;
-    }
-    return wrapCode(code,packArr)
-}
 
-function wrapCode(code,modules){
-    return ";(function(){\nvar innerArgument = arguments;\nvar innerModule = {};\nvar innerRequire = function(index){\nif(!innerArgument[index].called){\nvar module={};\ninnerArgument[index].called=1;\ninnerArgument[index].calling=1;\ninnerArgument[index].apply(this,[module,innerRequire].concat(arguments));\ninnerArgument[index].calling=0;\n;innerModule[index]=Object.assign({},module&&module.exports);\n}\nif(innerArgument[index].calling){console.error('cricle require')}\n return innerModule[index];\n };\n{0}\n})({1});".tpl(code,modules.join(",\n/**/\n"))
-}
+
 
 exports = module.exports ={
-    packJs:packJs
-};
+    handleRequireJs:handleRequireJs
+}
