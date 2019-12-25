@@ -1,0 +1,48 @@
+{
+  "name": "rapserver",
+  "version": "1.0.0",
+  "description": "",
+  "main": "rap.cluster.js",
+  "directories": {
+    "doc": "doc",
+    "lib": "lib",
+    "test": "test"
+  },
+  "scripts": {
+    "rapserverwww6":"set NODE_ENV=dev& node rap.server.js www6  --inspect=9925",
+    "dev": "set NODE_ENV=dev& node --inspect=9925 rap.server.js",
+    "test_ast": "set NODE_ENV=test& node --inspect rap.alias.cmd @/test/test.lib.ast.js",
+    "test_prefHook": "set NODE_ENV=test& node --inspect rap.alias.cmd @/test/test.node.prefhook.js",
+    "test_md5": "set NODE_ENV=test& node --inspect rap.alias.cmd @/test/test.core.md5.js",
+    "test_browser": "set NODE_ENV=test&node --inspect rap.alias.cmd @/test/test.browser.js",
+    "test_archiver": "set NODE_ENV=test&node --inspect rap.alias.cmd @/test/test.lib.archiver.js",
+    "test_action": "set NODE_ENV=test&node --inspect rap.alias.cmd @/test/test.core.action.js",
+    "test_cookie": "set NODE_ENV=test&node --inspect rap.alias.cmd @/test/test.cookie.js",
+    "test_parse": "set NODE_ENV=test&node --inspect rap.alias.cmd @/test/test.compiler.parse.js",
+    "test_parse_include": "set NODE_ENV=test&node --inspect rap.alias.cmd @/test/test.compiler.parse.include.js",
+    "test_parse_useTemplate": "set NODE_ENV=test&node --inspect rap.alias.cmd @/test/test.compiler.parse.useTemplate.js",
+    "test_sort_cssAndJs": "set NODE_ENV=test&node --inspect rap.alias.cmd @/test/test.compiler.sort.cssAndJs.js",
+    "test_packJs": "set NODE_ENV=test&node --inspect rap.alias.cmd @/test/test.compiler.packJs.js",
+    "test_packCss": "set NODE_ENV=test&node --inspect rap.alias.cmd @/test/test.compiler.packCss.js",
+    "test_packHtml": "set NODE_ENV=test&node --inspect rap.alias.cmd @/test/test.compiler.packHtml.js",
+    "test_file": "set NODE_ENV=test&node --inspect rap.alias.cmd @/test/test.core.file.stat.js",
+    "test_log": "set NODE_ENV=test&node --inspect rap.alias.cmd @/test/test.core.log.js",
+    "test_webpack": "set NODE_ENV=test&node --inspect rap.alias.cmd @/test/test.webpack.js",
+    "http": "set NODE_ENV=dev&node  --inspect rap.alias.cmd @/rap.server.js",
+    "cluster": "set NODE_ENV=dev&node  --inspect rap.alias.cmd @/rap.cluster.js",
+    "buildStatic": "set NODE_ENV=dev& node --inspect rap.alias.cmd @/static/build.config.js",
+    "test_useage": "set NODE_ENV=test&node --inspect rap.alias.cmd @/test/test.userage.js",
+    "test_apicloud": "set NODE_ENV=test&node --inspect rap.alias.cmd @/test/test.core.apicloud.js",
+    "testSocket": "set NODE_ENV=test&node --inspect rap.alias.cmd @/rap.socket.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "apicloud": "^1.0.4",
+    "nodejs-websocket": "^1.7.2",
+    "os-usage": "0.0.3",
+    "os-utils": "0.0.14",
+    "socket.io": "^2.2.0"
+  }
+}
