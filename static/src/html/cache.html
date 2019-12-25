@@ -1,0 +1,26 @@
+<useTemplate src="/template/index.html" replaceWith="root" config="/html/json/cache.js"></useTemplate>
+<link rel="stylesheet" href="/css/html/cache.css">
+
+<div class="cache-content wrap">
+	<div class="clear-content p20">
+		<h3 class="bd bd-warning bd-2 bd-left pl10">缓存管理</h3>
+		<div class="pt20">
+			<a class="btn btn-info clearAction">更新action</a>
+			<a class="btn btn-info mr5">更新静态Etag</a>
+			<a class="btn btn-info mr5 restartServer">软重启服务器</a>
+			<a class="btn btn-info mr5">更新缓存数据</a>
+		</div>
+		<div class="col mt20 lh30  J-validItem">
+			<div class="col3 tr pr10 text">选择cmd命令</div>
+			<div class="col8 plr10  ipt-wrap"><input autocomplete="off" id="cmdPath" type="text" class="ipt fw12 h30  pl5 " name="path" check-type="required" data-required-msg="必填字段" data-blur="false" data-focus="false"  placeholder="路径"></div>
+			<div class="col1 t-danger pr10"><p class="ipt-error J-valid-msg"></p></div>
+		</div>
+		<div class="pt20">
+			<p class="mt10"><span class="fb">更新action:</span><span class="mr5">添加了action时服务器并不会自动更新action，需要手动更新</span></p>
+			<p class="mt10"><span class="fb">更新静态Etag:</span><span class="mr5">服务器会更新浏览器的缓存</span></p>
+			<p class="mt10"><span class="fb">软重启服务器:</span><span class="mr5">服务器并不会停机，但是有些设置会失效</span></p>
+			<p class="mt10"><span class="fb">更新缓存数据:</span><span class="mr5">服务器更新数据库已缓存的数据</span></p>
+		</div>
+	</div>
+</div>
+<script src="/js/html/cache.js"></script>

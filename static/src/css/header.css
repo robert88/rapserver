@@ -1,0 +1,26 @@
+.header-wrap{
+	height: 60px;
+	line-height: 60px;
+	background: #00a0e9;
+	color:#fff;
+	font-size: 20px;
+	position: relative;
+}
+.header-wrap .back{
+	position: absolute;
+	left: 15px;
+	line-height: inherit;
+	top: 0;
+	height: 100%;
+	text-align: center;
+}
+.header-wrap .header-right{
+	position: absolute;
+	right: 15px;
+	top: 0;
+	height: 100%;
+	text-align: center;
+}
+.header-wrap .form-group{
+	padding-top:10px;
+}

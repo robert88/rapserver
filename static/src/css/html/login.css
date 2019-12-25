@@ -1,0 +1,11 @@
+html{height:100%}
+body{height: 100%;}
+.loginWrap{height: 100%;position: relative;}
+.loginWrap .wrap{max-width: 800px;display: inline-block;vertical-align: middle;width: 99%}
+.loginWrap:after{width: 1px;display: inline-block;vertical-align: middle;height: 100%;content: "";width:0%;height: 100%}
+.loginWrap form fieldset>i{left:3px;top: 8px;color: #999;}
+.loginWrap form fieldset input{padding-left:20px}
+.loginWrap .login-info{}
+.loginWrap .login-info .go-register{}
+.loginWrap .login-info .go-findPwd{}
+.validError .ipt-error{position:absolute;left:0;top:100%;}

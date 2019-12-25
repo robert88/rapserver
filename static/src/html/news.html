@@ -1,0 +1,35 @@
+<useTemplate src="/template/index.html" replaceWith="root" config="/html/json/news.js"></useTemplate>
+<link rel="stylesheet" href="/css/html/news.css">
+<div class="loginWrap mtb30">
+    <div class="wrap">
+        <form id="newsForm" autocomplete="off" >
+            <div class="col mt20 lh30  J-validItem">
+                <div class="plr10 text">标题</div>
+                <div class="plr10"><input type="text" class="ipt fw12 h30 pl5 " name="title" check-type="required" data-required-msg="必填字段" placeholder="title" data-blur="false" data-focus="false" ></div>
+                <div class="t-danger  pr10"><p class="ipt-error J-valid-msg"></p></div>
+            </div>
+            <div class="col mt20 lh30  J-validItem">
+                <div class="plr10 text">关键字</div>
+                <div class="plr10"><input type="text" class="ipt fw12 h30 pl5 " name="keyword" check-type="required" data-required-msg="必填字段" placeholder="keyword" data-blur="false" data-focus="false" ></div>
+                <div class="t-danger  pr10"><p class="ipt-error J-valid-msg"></p></div>
+            </div>
+            <div class="col mt20 lh30  J-validItem">
+                <div class="plr10 text">描述</div>
+                <div class="plr10"><input type="text" class="ipt fw12 h30 pl5 " name="description" check-type="required" data-required-msg="必填字段" placeholder="description" data-blur="false" data-focus="false" ></div>
+                <div class="t-danger  pr10"><p class="ipt-error J-valid-msg"></p></div>
+            </div>
+            <div class="col mt20 lh30  J-validItem">
+                <div class="plr10 text">内容 <a class="ptb5 plr10 bg-light-muted a-link">html</a></div>
+                <div class="plr10"><textarea type="text" rows="5" class="ipt fw12 pl5 " name="content" check-type="required" data-required-msg="必填字段" placeholder="content" data-blur="false" data-focus="false" ></textarea></div>
+                <div class="t-danger  pr10"><p class="ipt-error J-valid-msg"></p></div>
+            </div>
+            <div class="col mt20 lh30">
+                <div class=" tr pr10 space-text">&nbsp;</div>
+                <div class=" plr10 btn-wrap"><a class="btn-success btn J-submitBtn w130 ">添加</a></div>
+            </div>
+        </form>
+    </div>
+
+</div>
+
+<script src="/js/html/news.js"></script>

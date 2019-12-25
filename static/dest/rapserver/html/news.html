@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
+	<link href="/rapserver/favicon.ico?rootId=rapserver" rel="shortcut icon">
+	<title>rapserver 系统 新闻中心</title>
+	<!------start merge src='/css/merge/lib.min.css'-->
+
+
+
+
+
+
+
+
+<!------end merge-->
+
+	<!------start merge src='/css/merge/lib.min.css'-->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!------end merge-->
+
+<link href='/rapserver/css/base.css' rel='stylesheet'/>
+<link href='/rapserver/css/form.css' rel='stylesheet'/>
+<link href='/rapserver/css/btn.css' rel='stylesheet'/>
+<link href='/rapserver/css/iconmoon/style.css' rel='stylesheet'/>
+<link href='/rapserver/css/loading.css' rel='stylesheet'/>
+<link href='/rapserver/js/RBT/dialog.css' rel='stylesheet'/>
+<link href='/rapserver/css/down-menu.css' rel='stylesheet'/>
+<link href='/rapserver/css/label.css' rel='stylesheet'/>
+<link href='/rapserver/css/module/layout-header.css' rel='stylesheet'/>
+<link href='/rapserver/css/html/news.css' rel='stylesheet'/>
+<link href='/rapserver/css/module/layout-footer.css' rel='stylesheet'/></head>
+<body>
+	<div id="pageLoad">
+    <div class="loader">
+        <div class="loader-inner line-scale-pulse-out">
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+    </div>
+</div>
+	
+<div class="top-fix-bar">
+    <div class="wrap">
+        <a class="logo" href="/rapserver/html/index.html" title="rapserver管理后台">rapserver 系统</a>
+        <ul class="top-nav clearfix">
+            <li class="nav-list">
+                <div class="nav-list-inner">
+                    <a class="a-link" href="/rapserver/html/index.html">
+                        <i class="fa-home"></i><span class="text">首页</span>
+                    </a>
+                </div>
+            </li>
+            <li class="nav-list">
+                <div class="nav-list-inner">
+                    <a class="a-link" accesskey="s">
+                        <i class="fa-code-fork"></i><span class="text">服务器</span><i class="fa-angle-down"></i>
+                    </a>
+                </div>
+                <div class="nav-drop-down">
+                    <div class="main-area">
+                        <ul class="main-application-list clearfix">
+                            <li>
+                                <a class="app-name" href="/rapserver/html/permission.html"><i class="fa-legal"></i>权限管理</a>
+                            </li>
+                            <li>
+                                <a class="app-name" href="/rapserver/html/cache.html"><i class="fa-hdd-o"></i>缓存管理</a>
+                            </li>
+                            <li>
+                                <a class="app-name" href="/rapserver/html/news.html"><i class="fa-bullhorn"></i>新闻发布</a>
+                            </li>
+                            <li>
+                                <a class="app-name"  href="/rapserver/html/staticReport.html"><i class="fa-crop"></i>静态发布</a>
+                            </li>
+                            <li>
+                                <a class="app-name"><i class="fa-group-users"></i>用户管理</a>
+                            </li>
+                            <li>
+                                <a class="app-name" href="/rapserver/html/log.html"><i class="fa-stethoscope"></i>系统日志</a>
+                            </li>
+                            <li>
+                                <a class="app-name" href="/rapserver/html/demo.html"><i class="fa-css3"></i>字体管理</a>
+                            </li>
+                            <li>
+                                <a class="app-name" href="/rapserver/html/module.html"><i class="fa-fighter-jet"></i>模板管理</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </li>
+            <li class="nav-list">
+                <div class="nav-list-inner">
+                    <a  class="a-link" accesskey="z"><i class="fa-keyboard-o"></i><span class="text">客户端</span><i class="fa-angle-down"></i></a>
+                </div>
+                <div class="nav-drop-down ">
+                    <div class="main-area">
+                        <ul class="main-application-list clearfix">
+                            <li>
+                                <a class="app-name"><i class="fa-unlock-alt"></i>用户跟踪</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </li>
+        </ul>
+        <div class="user-info">
+            <a class="user-home J-login" href="/logo">
+                <img class="user-avatar" src="/rapserver/js/RBT/dl-img/loading.gif" data-src="" alt="您的头像" style="display:none">
+                <span class="user-name textoverflow ">登录</span>
+            </a>
+            <a class="logout-new a-link" title="退出"><i class="fa-power-off"></i></a>
+        </div>
+        <div class="top-search">
+            <div class="search-box">
+                <input class="ipt J-search" type="text" placeholder="服务器/客户端/动态">
+                <a href="javascript:;" class="search-button"><i class="fa-search"></i></a>
+            </div>
+        </div>
+    </div>
+    <div class="top-fix-extend">
+        <a class="fa-signal signal-icon"></a>
+        <ul class="bandwidth-info ease">
+            <li class="col"><span class="text col6">停留时间</span><span class="t-warning readyStart col6"></span></li>
+            <li class="col"><span class="text  col6">网络时间</span><span class="t-warning initDomTreeTime col6"></span></li>
+            <li class="col"><span class="text col6">空白时间</span><span class="t-warning whitePaper col6"></span></li>
+            <li class="col"><span class="text col6">整体时间</span><span class="t-warning loadTime col6"></span></li>
+            <li class="col"><span class="text col6">当前网速</span><span class="t-warning netSpeek col6"></span></li>
+            <li class="col"><span class="text col6">请求数</span><span class="t-warning requestNum col6"></span></li>
+            <li><span class="text">请求大小</span><div class="t-warning transfer"></div></li>
+        </ul>
+    </div>
+</div>
+
+	
+
+<div class="loginWrap mtb30">
+    <div class="wrap">
+        <form id="newsForm" autocomplete="off" >
+            <div class="col mt20 lh30  J-validItem">
+                <div class="plr10 text">标题</div>
+                <div class="plr10"><input type="text" class="ipt fw12 h30 pl5 " name="title" check-type="required" data-required-msg="必填字段" placeholder="title" data-blur="false" data-focus="false" ></div>
+                <div class="t-danger  pr10"><p class="ipt-error J-valid-msg"></p></div>
+            </div>
+            <div class="col mt20 lh30  J-validItem">
+                <div class="plr10 text">关键字</div>
+                <div class="plr10"><input type="text" class="ipt fw12 h30 pl5 " name="keyword" check-type="required" data-required-msg="必填字段" placeholder="keyword" data-blur="false" data-focus="false" ></div>
+                <div class="t-danger  pr10"><p class="ipt-error J-valid-msg"></p></div>
+            </div>
+            <div class="col mt20 lh30  J-validItem">
+                <div class="plr10 text">描述</div>
+                <div class="plr10"><input type="text" class="ipt fw12 h30 pl5 " name="description" check-type="required" data-required-msg="必填字段" placeholder="description" data-blur="false" data-focus="false" ></div>
+                <div class="t-danger  pr10"><p class="ipt-error J-valid-msg"></p></div>
+            </div>
+            <div class="col mt20 lh30  J-validItem">
+                <div class="plr10 text">内容 <a class="ptb5 plr10 bg-light-muted a-link">html</a></div>
+                <div class="plr10"><textarea type="text" rows="5" class="ipt fw12 pl5 " name="content" check-type="required" data-required-msg="必填字段" placeholder="content" data-blur="false" data-focus="false" ></textarea></div>
+                <div class="t-danger  pr10"><p class="ipt-error J-valid-msg"></p></div>
+            </div>
+            <div class="col mt20 lh30">
+                <div class=" tr pr10 space-text">&nbsp;</div>
+                <div class=" plr10 btn-wrap"><a class="btn-success btn J-submitBtn w130 ">添加</a></div>
+            </div>
+        </form>
+    </div>
+</div>
+
+	
+<div class="footer">
+    <div class="wrap col">
+        <ul class="footer-info col5">
+            <li class="text">服务与支持</li>
+            <li class="value">18688714537</li>
+            <li class="text">服务时间</li>
+            <li class="value">周一至周日 08:30-9:30</li>
+            <li class="text">qq和微信</li>
+            <li class="value">841354162</li>
+        </ul>
+        <ul class="col4">
+            <li class="text"><i class="fa-github"></i>git仓库</li>
+            <li class="value"><a class="https://github.com/robert88/robert88.github.io">https://github.com/robert88/robert88.github.io</a></li>
+        </ul>
+    </div>
+</div>
+<script src='/rapserver/js/RBT/prototype.js'></script>
+<script src='/rapserver/js/RBT/each.js'></script>
+<script src='/rapserver/js/RBT/extend.js'></script>
+<script src='/rapserver/js/RBT/browser.js'></script>
+<script src='/rapserver/js/RBT/dom.js'></script>
+<script src='/rapserver/js/RBT/ajax.js'></script>
+<script src='/rapserver/js/RBT/resize.js'></script>
+<script src='/rapserver/js/RBT/localStorage.js'></script>
+<script src='/rapserver/js/RBT/url.js'></script>
+<script src='/rapserver/js/RBT/template.js'></script>
+<script src='/rapserver/js/RBT/downMenu.js'></script>
+<script src='/rapserver/js/RBT/floatHeight.js'></script>
+<script src='/rapserver/js/RBT/validForm.js'></script>
+<script src='/rapserver/js/RBT/dialog.js'></script>
+<script src='/rapserver/js/RBT/socket.js'></script>
+<script src='/rapserver/js/RBT/chart.js'></script>
+<script src='/rapserver/js/RBT/performance.js'></script>
+<script src='/rapserver/js/module/layout-header.js'></script>
+<script src='/rapserver/js/html/news.js'></script></body>
+</html>

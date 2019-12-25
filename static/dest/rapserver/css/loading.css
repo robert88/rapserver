@@ -1,0 +1,6 @@
+#pageLoad{opacity: .2;position: fixed;left: 0;top: 0;background-color: #000;width: 100%;height: 100%;display: none;align-items: center;justify-content: center;z-index: 2000;}
+.loader{box-sizing: border-box;display: flex;flex: 0 1 auto;flex-direction: column;flex-grow: 1;flex-shrink: 0;flex-basis: 25%;align-items: center;justify-content: center;}
+.loading{position:relative;min-height: 50px;}
+.loading:after{content: "";position:absolute;width:100%;height:100%;z-index: 10;left:0;top:0;z-index: 99;background-color: rgba(0,0,0,0.3);}
+.loading:before{content: "";position:absolute;width: 40px;height: 40px;left: 50%;top: 50%;z-index: 100;margin-left: -20px;margin-top: -20px;color:#fff;background: url(/rapserver/rapserver/rapserver/public/images/bars.svg) no-repeat;background-size: 100%;}
+#pageLoad .loader{max-width: 25%;height: 200px;}

@@ -1,0 +1,150 @@
+[log][2019/12/25 20:52:10][function (req,callback) ]:累计请求:[31m1[39m 请求类型:GET请求url:/请求参数：{}
+[log][2019/12/25 20:52:14][function (req,callback) ]:累计请求:[31m2[39m 请求类型:GET请求url:/请求参数：{}
+[log][2019/12/25 20:54:04][function (req,callback) ]:累计请求:[31m3[39m 请求类型:GET请求url:/请求参数：{}
+[log][2019/12/25 20:55:11][function (req,callback) ]:累计请求:[31m1[39m 请求类型:GET请求url:/rapserver/html/index.html请求参数：{}
+[log][2019/12/25 21:01:10][function (req,callback) ]:累计请求:[31m2[39m 请求类型:GET请求url:/请求参数：{}
+[log][2019/12/25 21:01:10][function responseData(ret, request, response, type,isFile) ]:请求结果为静态文件：D:/git/rapserver-github/rapserver/static/dest/rapserver/html/index.html
+[log][2019/12/25 21:01:10][function (req,callback) ]:累计请求:[31m3[39m 请求类型:GET请求url:/rapserver/css/base.css请求参数：{}
+[log][2019/12/25 21:01:10][function responseData(ret, request, response, type,isFile) ]:请求结果为静态文件：D:/git/rapserver-github/rapserver/static/dest/rapserver/css/base.css
+[log][2019/12/25 21:01:10][function (req,callback) ]:累计请求:[31m4[39m 请求类型:GET请求url:/rapserver/css/form.css请求参数：{}
+[log][2019/12/25 21:01:10][function responseData(ret, request, response, type,isFile) ]:请求结果为静态文件：D:/git/rapserver-github/rapserver/static/dest/rapserver/css/form.css
+[log][2019/12/25 21:01:10][function (req,callback) ]:累计请求:[31m5[39m 请求类型:GET请求url:/rapserver/css/btn.css请求参数：{}
+[log][2019/12/25 21:01:10][function responseData(ret, request, response, type,isFile) ]:请求结果为静态文件：D:/git/rapserver-github/rapserver/static/dest/rapserver/css/btn.css
+[log][2019/12/25 21:01:10][function (req,callback) ]:累计请求:[31m6[39m 请求类型:GET请求url:/rapserver/css/iconmoon/style.css请求参数：{}
+[log][2019/12/25 21:01:10][function responseData(ret, request, response, type,isFile) ]:请求结果为静态文件：D:/git/rapserver-github/rapserver/static/dest/rapserver/css/iconmoon/style.css
+[log][2019/12/25 21:01:10][function (req,callback) ]:累计请求:[31m7[39m 请求类型:GET请求url:/rapserver/css/loading.css请求参数：{}
+[log][2019/12/25 21:01:10][function responseData(ret, request, response, type,isFile) ]:请求结果为静态文件：D:/git/rapserver-github/rapserver/static/dest/rapserver/css/loading.css
+[log][2019/12/25 21:01:10][function (req,callback) ]:累计请求:[31m8[39m 请求类型:GET请求url:/rapserver/js/RBT/dialog.css请求参数：{}
+[log][2019/12/25 21:01:10][function responseData(ret, request, response, type,isFile) ]:请求结果为静态文件：D:/git/rapserver-github/rapserver/static/dest/rapserver/js/RBT/dialog.css
+[log][2019/12/25 21:01:10][function (req,callback) ]:累计请求:[31m9[39m 请求类型:GET请求url:/rapserver/css/down-menu.css请求参数：{}
+[log][2019/12/25 21:01:10][function responseData(ret, request, response, type,isFile) ]:请求结果为静态文件：D:/git/rapserver-github/rapserver/static/dest/rapserver/css/down-menu.css
+[log][2019/12/25 21:01:10][function (req,callback) ]:累计请求:[31m10[39m 请求类型:GET请求url:/rapserver/css/label.css请求参数：{}
+[log][2019/12/25 21:01:10][function responseData(ret, request, response, type,isFile) ]:请求结果为静态文件：D:/git/rapserver-github/rapserver/static/dest/rapserver/css/label.css
+[log][2019/12/25 21:01:10][function (req,callback) ]:累计请求:[31m11[39m 请求类型:GET请求url:/rapserver/css/module/layout-header.css请求参数：{}
+[log][2019/12/25 21:01:10][function responseData(ret, request, response, type,isFile) ]:请求结果为静态文件：D:/git/rapserver-github/rapserver/static/dest/rapserver/css/module/layout-header.css
+[log][2019/12/25 21:01:10][function (req,callback) ]:累计请求:[31m12[39m 请求类型:GET请求url:/rapserver/css/html/index.css请求参数：{}
+[log][2019/12/25 21:01:10][function responseData(ret, request, response, type,isFile) ]:请求结果为静态文件：D:/git/rapserver-github/rapserver/static/dest/rapserver/css/html/index.css
+[log][2019/12/25 21:01:10][function (req,callback) ]:累计请求:[31m13[39m 请求类型:GET请求url:/rapserver/css/module/layout-footer.css请求参数：{}
+[log][2019/12/25 21:01:10][function responseData(ret, request, response, type,isFile) ]:请求结果为静态文件：D:/git/rapserver-github/rapserver/static/dest/rapserver/css/module/layout-footer.css
+[log][2019/12/25 21:01:10][function (req,callback) ]:累计请求:[31m14[39m 请求类型:GET请求url:/rapserver/js/RBT/prototype.js请求参数：{}
+[log][2019/12/25 21:01:10][function responseData(ret, request, response, type,isFile) ]:请求结果为静态文件：D:/git/rapserver-github/rapserver/static/dest/rapserver/js/RBT/prototype.js
+[log][2019/12/25 21:01:10][function (req,callback) ]:累计请求:[31m15[39m 请求类型:GET请求url:/rapserver/js/RBT/each.js请求参数：{}
+[log][2019/12/25 21:01:10][function responseData(ret, request, response, type,isFile) ]:请求结果为静态文件：D:/git/rapserver-github/rapserver/static/dest/rapserver/js/RBT/each.js
+[log][2019/12/25 21:01:10][function (req,callback) ]:累计请求:[31m16[39m 请求类型:GET请求url:/rapserver/js/RBT/extend.js请求参数：{}
+[log][2019/12/25 21:01:10][function responseData(ret, request, response, type,isFile) ]:请求结果为静态文件：D:/git/rapserver-github/rapserver/static/dest/rapserver/js/RBT/extend.js
+[log][2019/12/25 21:01:10][function (req,callback) ]:累计请求:[31m17[39m 请求类型:GET请求url:/rapserver/js/RBT/browser.js请求参数：{}
+[log][2019/12/25 21:01:10][function responseData(ret, request, response, type,isFile) ]:请求结果为静态文件：D:/git/rapserver-github/rapserver/static/dest/rapserver/js/RBT/browser.js
+[log][2019/12/25 21:01:10][function (req,callback) ]:累计请求:[31m18[39m 请求类型:GET请求url:/rapserver/js/RBT/dom.js请求参数：{}
+[log][2019/12/25 21:01:10][function responseData(ret, request, response, type,isFile) ]:请求结果为静态文件：D:/git/rapserver-github/rapserver/static/dest/rapserver/js/RBT/dom.js
+[log][2019/12/25 21:01:10][function (req,callback) ]:累计请求:[31m19[39m 请求类型:GET请求url:/rapserver/js/RBT/ajax.js请求参数：{}
+[log][2019/12/25 21:01:10][function responseData(ret, request, response, type,isFile) ]:请求结果为静态文件：D:/git/rapserver-github/rapserver/static/dest/rapserver/js/RBT/ajax.js
+[log][2019/12/25 21:01:10][function (req,callback) ]:累计请求:[31m20[39m 请求类型:GET请求url:/rapserver/js/RBT/resize.js请求参数：{}
+[log][2019/12/25 21:01:10][function responseData(ret, request, response, type,isFile) ]:请求结果为静态文件：D:/git/rapserver-github/rapserver/static/dest/rapserver/js/RBT/resize.js
+[log][2019/12/25 21:01:10][function (req,callback) ]:累计请求:[31m21[39m 请求类型:GET请求url:/rapserver/js/RBT/localStorage.js请求参数：{}
+[log][2019/12/25 21:01:10][function responseData(ret, request, response, type,isFile) ]:请求结果为静态文件：D:/git/rapserver-github/rapserver/static/dest/rapserver/js/RBT/localStorage.js
+[log][2019/12/25 21:01:10][function (req,callback) ]:累计请求:[31m22[39m 请求类型:GET请求url:/rapserver/js/RBT/url.js请求参数：{}
+[log][2019/12/25 21:01:10][function responseData(ret, request, response, type,isFile) ]:请求结果为静态文件：D:/git/rapserver-github/rapserver/static/dest/rapserver/js/RBT/url.js
+[log][2019/12/25 21:01:10][function (req,callback) ]:累计请求:[31m23[39m 请求类型:GET请求url:/rapserver/js/RBT/template.js请求参数：{}
+[log][2019/12/25 21:01:10][function responseData(ret, request, response, type,isFile) ]:请求结果为静态文件：D:/git/rapserver-github/rapserver/static/dest/rapserver/js/RBT/template.js
+[log][2019/12/25 21:01:10][function (req,callback) ]:累计请求:[31m24[39m 请求类型:GET请求url:/rapserver/js/RBT/downMenu.js请求参数：{}
+[log][2019/12/25 21:01:10][function responseData(ret, request, response, type,isFile) ]:请求结果为静态文件：D:/git/rapserver-github/rapserver/static/dest/rapserver/js/RBT/downMenu.js
+[log][2019/12/25 21:01:10][function (req,callback) ]:累计请求:[31m25[39m 请求类型:GET请求url:/rapserver/js/RBT/floatHeight.js请求参数：{}
+[log][2019/12/25 21:01:10][function responseData(ret, request, response, type,isFile) ]:请求结果为静态文件：D:/git/rapserver-github/rapserver/static/dest/rapserver/js/RBT/floatHeight.js
+[log][2019/12/25 21:01:10][function (req,callback) ]:累计请求:[31m26[39m 请求类型:GET请求url:/rapserver/js/RBT/validForm.js请求参数：{}
+[log][2019/12/25 21:01:10][function responseData(ret, request, response, type,isFile) ]:请求结果为静态文件：D:/git/rapserver-github/rapserver/static/dest/rapserver/js/RBT/validForm.js
+[log][2019/12/25 21:01:10][function (req,callback) ]:累计请求:[31m27[39m 请求类型:GET请求url:/rapserver/js/RBT/dialog.js请求参数：{}
+[log][2019/12/25 21:01:10][function responseData(ret, request, response, type,isFile) ]:请求结果为静态文件：D:/git/rapserver-github/rapserver/static/dest/rapserver/js/RBT/dialog.js
+[log][2019/12/25 21:01:10][function (req,callback) ]:累计请求:[31m28[39m 请求类型:GET请求url:/rapserver/js/RBT/socket.js请求参数：{}
+[log][2019/12/25 21:01:10][function responseData(ret, request, response, type,isFile) ]:请求结果为静态文件：D:/git/rapserver-github/rapserver/static/dest/rapserver/js/RBT/socket.js
+[log][2019/12/25 21:01:10][function (req,callback) ]:累计请求:[31m29[39m 请求类型:GET请求url:/rapserver/js/RBT/chart.js请求参数：{}
+[log][2019/12/25 21:01:10][function responseData(ret, request, response, type,isFile) ]:请求结果为静态文件：D:/git/rapserver-github/rapserver/static/dest/rapserver/js/RBT/chart.js
+[log][2019/12/25 21:01:10][function (req,callback) ]:累计请求:[31m30[39m 请求类型:GET请求url:/rapserver/js/RBT/performance.js请求参数：{}
+[log][2019/12/25 21:01:10][function responseData(ret, request, response, type,isFile) ]:请求结果为静态文件：D:/git/rapserver-github/rapserver/static/dest/rapserver/js/RBT/performance.js
+[log][2019/12/25 21:01:10][function (req,callback) ]:累计请求:[31m31[39m 请求类型:GET请求url:/rapserver/js/module/layout-header.js请求参数：{}
+[log][2019/12/25 21:01:10][function responseData(ret, request, response, type,isFile) ]:请求结果为静态文件：D:/git/rapserver-github/rapserver/static/dest/rapserver/js/module/layout-header.js
+[log][2019/12/25 21:01:10][function (req,callback) ]:累计请求:[31m32[39m 请求类型:GET请求url:/rapserver/js/html/index.js请求参数：{}
+[log][2019/12/25 21:01:10][function responseData(ret, request, response, type,isFile) ]:请求结果为静态文件：D:/git/rapserver-github/rapserver/static/dest/rapserver/js/html/index.js
+[log][2019/12/25 21:01:10][function (req,callback) ]:累计请求:[31m33[39m 请求类型:GET请求url:/rapserver/js/RBT/dl-img/loading.gif请求参数：{}
+[log][2019/12/25 21:01:10][function responseData(ret, request, response, type,isFile) ]:请求结果为静态文件：D:/git/rapserver-github/rapserver/static/dest/rapserver/js/RBT/dl-img/loading.gif
+[log][2019/12/25 21:01:10][function (req,callback) ]:累计请求:[31m34[39m 请求类型:GET请求url:/rapserver/img/logo.png请求参数：{}
+[log][2019/12/25 21:01:10][function responseData(ret, request, response, type,isFile) ]:请求结果为静态文件：D:/git/rapserver-github/rapserver/static/dest/rapserver/img/logo.png
+[log][2019/12/25 21:01:10][function (req,callback) ]:累计请求:[31m35[39m 请求类型:GET请求url:/rapserver/css/iconmoon/fonts/icomoon.ttf请求参数：{"a0opvm":""}
+[log][2019/12/25 21:01:10][function responseData(ret, request, response, type,isFile) ]:请求结果为静态文件：D:/git/rapserver-github/rapserver/static/dest/rapserver/css/iconmoon/fonts/icomoon.ttf
+[log][2019/12/25 21:01:11][function (req,callback) ]:累计请求:[31m36[39m 请求类型:GET请求url:/root/get请求参数：{}
+[log][2019/12/25 21:01:11][function responseData(ret, request, response, type,isFile) ]:请求结果application/json
+[log][2019/12/25 21:01:11][function responseData(ret, request, response, type,isFile) ]:请求结果application/json
+[log][2019/12/25 21:01:11][function (req,callback) ]:累计请求:[31m37[39m 请求类型:GET请求url:/rapserver/favicon.ico请求参数：{"rootId":"rapserver"}
+[log][2019/12/25 21:01:11][function responseData(ret, request, response, type,isFile) ]:请求结果为静态文件：D:/git/rapserver-github/rapserver/static/dest/rapserver/favicon.ico
+[log][2019/12/25 21:02:42][function (req,callback) ]:累计请求:[31m1[39m 请求类型:GET请求url:/请求参数：{}
+[log][2019/12/25 21:02:42][function responseData(ret, request, response, type,isFile) ]:请求结果为静态文件：D:/git/rapserver-github/rapserver/static/dest/rapserver/html/index.html
+[log][2019/12/25 21:02:42][function (req,callback) ]:累计请求:[31m2[39m 请求类型:GET请求url:/rapserver/css/base.css请求参数：{}
+[log][2019/12/25 21:02:42][function responseData(ret, request, response, type,isFile) ]:请求结果为静态文件：D:/git/rapserver-github/rapserver/static/dest/rapserver/css/base.css
+[log][2019/12/25 21:02:42][function (req,callback) ]:累计请求:[31m3[39m 请求类型:GET请求url:/rapserver/css/form.css请求参数：{}
+[log][2019/12/25 21:02:42][function responseData(ret, request, response, type,isFile) ]:请求结果为静态文件：D:/git/rapserver-github/rapserver/static/dest/rapserver/css/form.css
+[log][2019/12/25 21:02:42][function (req,callback) ]:累计请求:[31m4[39m 请求类型:GET请求url:/rapserver/css/btn.css请求参数：{}
+[log][2019/12/25 21:02:42][function responseData(ret, request, response, type,isFile) ]:请求结果为静态文件：D:/git/rapserver-github/rapserver/static/dest/rapserver/css/btn.css
+[log][2019/12/25 21:02:42][function (req,callback) ]:累计请求:[31m5[39m 请求类型:GET请求url:/rapserver/css/iconmoon/style.css请求参数：{}
+[log][2019/12/25 21:02:42][function responseData(ret, request, response, type,isFile) ]:请求结果为静态文件：D:/git/rapserver-github/rapserver/static/dest/rapserver/css/iconmoon/style.css
+[log][2019/12/25 21:02:42][function (req,callback) ]:累计请求:[31m6[39m 请求类型:GET请求url:/rapserver/css/loading.css请求参数：{}
+[log][2019/12/25 21:02:42][function responseData(ret, request, response, type,isFile) ]:请求结果为静态文件：D:/git/rapserver-github/rapserver/static/dest/rapserver/css/loading.css
+[log][2019/12/25 21:02:42][function (req,callback) ]:累计请求:[31m7[39m 请求类型:GET请求url:/rapserver/js/RBT/dialog.css请求参数：{}
+[log][2019/12/25 21:02:42][function responseData(ret, request, response, type,isFile) ]:请求结果为静态文件：D:/git/rapserver-github/rapserver/static/dest/rapserver/js/RBT/dialog.css
+[log][2019/12/25 21:02:42][function (req,callback) ]:累计请求:[31m8[39m 请求类型:GET请求url:/rapserver/css/down-menu.css请求参数：{}
+[log][2019/12/25 21:02:42][function responseData(ret, request, response, type,isFile) ]:请求结果为静态文件：D:/git/rapserver-github/rapserver/static/dest/rapserver/css/down-menu.css
+[log][2019/12/25 21:02:42][function (req,callback) ]:累计请求:[31m9[39m 请求类型:GET请求url:/rapserver/css/label.css请求参数：{}
+[log][2019/12/25 21:02:42][function responseData(ret, request, response, type,isFile) ]:请求结果为静态文件：D:/git/rapserver-github/rapserver/static/dest/rapserver/css/label.css
+[log][2019/12/25 21:02:42][function (req,callback) ]:累计请求:[31m10[39m 请求类型:GET请求url:/rapserver/css/module/layout-header.css请求参数：{}
+[log][2019/12/25 21:02:42][function responseData(ret, request, response, type,isFile) ]:请求结果为静态文件：D:/git/rapserver-github/rapserver/static/dest/rapserver/css/module/layout-header.css
+[log][2019/12/25 21:02:42][function (req,callback) ]:累计请求:[31m11[39m 请求类型:GET请求url:/rapserver/css/html/index.css请求参数：{}
+[log][2019/12/25 21:02:42][function responseData(ret, request, response, type,isFile) ]:请求结果为静态文件：D:/git/rapserver-github/rapserver/static/dest/rapserver/css/html/index.css
+[log][2019/12/25 21:02:42][function (req,callback) ]:累计请求:[31m12[39m 请求类型:GET请求url:/rapserver/css/module/layout-footer.css请求参数：{}
+[log][2019/12/25 21:02:42][function responseData(ret, request, response, type,isFile) ]:请求结果为静态文件：D:/git/rapserver-github/rapserver/static/dest/rapserver/css/module/layout-footer.css
+[log][2019/12/25 21:02:42][function (req,callback) ]:累计请求:[31m13[39m 请求类型:GET请求url:/rapserver/js/RBT/prototype.js请求参数：{}
+[log][2019/12/25 21:02:42][function responseData(ret, request, response, type,isFile) ]:请求结果为静态文件：D:/git/rapserver-github/rapserver/static/dest/rapserver/js/RBT/prototype.js
+[log][2019/12/25 21:02:42][function (req,callback) ]:累计请求:[31m14[39m 请求类型:GET请求url:/rapserver/js/RBT/dl-img/loading.gif请求参数：{}
+[log][2019/12/25 21:02:42][function responseData(ret, request, response, type,isFile) ]:请求结果为静态文件：D:/git/rapserver-github/rapserver/static/dest/rapserver/js/RBT/dl-img/loading.gif
+[log][2019/12/25 21:02:42][function (req,callback) ]:累计请求:[31m15[39m 请求类型:GET请求url:/rapserver/js/RBT/each.js请求参数：{}
+[log][2019/12/25 21:02:42][function responseData(ret, request, response, type,isFile) ]:请求结果为静态文件：D:/git/rapserver-github/rapserver/static/dest/rapserver/js/RBT/each.js
+[log][2019/12/25 21:02:42][function (req,callback) ]:累计请求:[31m16[39m 请求类型:GET请求url:/rapserver/js/RBT/extend.js请求参数：{}
+[log][2019/12/25 21:02:42][function responseData(ret, request, response, type,isFile) ]:请求结果为静态文件：D:/git/rapserver-github/rapserver/static/dest/rapserver/js/RBT/extend.js
+[log][2019/12/25 21:02:42][function (req,callback) ]:累计请求:[31m17[39m 请求类型:GET请求url:/rapserver/js/RBT/browser.js请求参数：{}
+[log][2019/12/25 21:02:42][function responseData(ret, request, response, type,isFile) ]:请求结果为静态文件：D:/git/rapserver-github/rapserver/static/dest/rapserver/js/RBT/browser.js
+[log][2019/12/25 21:02:42][function (req,callback) ]:累计请求:[31m18[39m 请求类型:GET请求url:/rapserver/js/RBT/dom.js请求参数：{}
+[log][2019/12/25 21:02:42][function responseData(ret, request, response, type,isFile) ]:请求结果为静态文件：D:/git/rapserver-github/rapserver/static/dest/rapserver/js/RBT/dom.js
+[log][2019/12/25 21:02:42][function (req,callback) ]:累计请求:[31m19[39m 请求类型:GET请求url:/rapserver/js/RBT/ajax.js请求参数：{}
+[log][2019/12/25 21:02:42][function responseData(ret, request, response, type,isFile) ]:请求结果为静态文件：D:/git/rapserver-github/rapserver/static/dest/rapserver/js/RBT/ajax.js
+[log][2019/12/25 21:02:42][function (req,callback) ]:累计请求:[31m20[39m 请求类型:GET请求url:/rapserver/js/RBT/resize.js请求参数：{}
+[log][2019/12/25 21:02:42][function responseData(ret, request, response, type,isFile) ]:请求结果为静态文件：D:/git/rapserver-github/rapserver/static/dest/rapserver/js/RBT/resize.js
+[log][2019/12/25 21:02:42][function (req,callback) ]:累计请求:[31m21[39m 请求类型:GET请求url:/rapserver/js/RBT/localStorage.js请求参数：{}
+[log][2019/12/25 21:02:42][function responseData(ret, request, response, type,isFile) ]:请求结果为静态文件：D:/git/rapserver-github/rapserver/static/dest/rapserver/js/RBT/localStorage.js
+[log][2019/12/25 21:02:42][function (req,callback) ]:累计请求:[31m22[39m 请求类型:GET请求url:/rapserver/js/RBT/url.js请求参数：{}
+[log][2019/12/25 21:02:42][function responseData(ret, request, response, type,isFile) ]:请求结果为静态文件：D:/git/rapserver-github/rapserver/static/dest/rapserver/js/RBT/url.js
+[log][2019/12/25 21:02:42][function (req,callback) ]:累计请求:[31m23[39m 请求类型:GET请求url:/rapserver/js/RBT/template.js请求参数：{}
+[log][2019/12/25 21:02:42][function responseData(ret, request, response, type,isFile) ]:请求结果为静态文件：D:/git/rapserver-github/rapserver/static/dest/rapserver/js/RBT/template.js
+[log][2019/12/25 21:02:42][function (req,callback) ]:累计请求:[31m24[39m 请求类型:GET请求url:/rapserver/js/RBT/downMenu.js请求参数：{}
+[log][2019/12/25 21:02:42][function responseData(ret, request, response, type,isFile) ]:请求结果为静态文件：D:/git/rapserver-github/rapserver/static/dest/rapserver/js/RBT/downMenu.js
+[log][2019/12/25 21:02:42][function (req,callback) ]:累计请求:[31m25[39m 请求类型:GET请求url:/rapserver/js/RBT/floatHeight.js请求参数：{}
+[log][2019/12/25 21:02:42][function responseData(ret, request, response, type,isFile) ]:请求结果为静态文件：D:/git/rapserver-github/rapserver/static/dest/rapserver/js/RBT/floatHeight.js
+[log][2019/12/25 21:02:42][function (req,callback) ]:累计请求:[31m26[39m 请求类型:GET请求url:/rapserver/js/RBT/validForm.js请求参数：{}
+[log][2019/12/25 21:02:42][function responseData(ret, request, response, type,isFile) ]:请求结果为静态文件：D:/git/rapserver-github/rapserver/static/dest/rapserver/js/RBT/validForm.js
+[log][2019/12/25 21:02:42][function (req,callback) ]:累计请求:[31m27[39m 请求类型:GET请求url:/rapserver/js/RBT/dialog.js请求参数：{}
+[log][2019/12/25 21:02:42][function responseData(ret, request, response, type,isFile) ]:请求结果为静态文件：D:/git/rapserver-github/rapserver/static/dest/rapserver/js/RBT/dialog.js
+[log][2019/12/25 21:02:42][function (req,callback) ]:累计请求:[31m28[39m 请求类型:GET请求url:/rapserver/js/RBT/socket.js请求参数：{}
+[log][2019/12/25 21:02:42][function responseData(ret, request, response, type,isFile) ]:请求结果为静态文件：D:/git/rapserver-github/rapserver/static/dest/rapserver/js/RBT/socket.js
+[log][2019/12/25 21:02:42][function (req,callback) ]:累计请求:[31m29[39m 请求类型:GET请求url:/rapserver/js/RBT/chart.js请求参数：{}
+[log][2019/12/25 21:02:42][function responseData(ret, request, response, type,isFile) ]:请求结果为静态文件：D:/git/rapserver-github/rapserver/static/dest/rapserver/js/RBT/chart.js
+[log][2019/12/25 21:02:42][function (req,callback) ]:累计请求:[31m30[39m 请求类型:GET请求url:/rapserver/js/RBT/performance.js请求参数：{}
+[log][2019/12/25 21:02:42][function responseData(ret, request, response, type,isFile) ]:请求结果为静态文件：D:/git/rapserver-github/rapserver/static/dest/rapserver/js/RBT/performance.js
+[log][2019/12/25 21:02:42][function (req,callback) ]:累计请求:[31m31[39m 请求类型:GET请求url:/rapserver/js/module/layout-header.js请求参数：{}
+[log][2019/12/25 21:02:42][function responseData(ret, request, response, type,isFile) ]:请求结果为静态文件：D:/git/rapserver-github/rapserver/static/dest/rapserver/js/module/layout-header.js
+[log][2019/12/25 21:02:42][function (req,callback) ]:累计请求:[31m32[39m 请求类型:GET请求url:/rapserver/js/html/index.js请求参数：{}
+[log][2019/12/25 21:02:42][function responseData(ret, request, response, type,isFile) ]:请求结果为静态文件：D:/git/rapserver-github/rapserver/static/dest/rapserver/js/html/index.js
+[log][2019/12/25 21:02:42][function (req,callback) ]:累计请求:[31m33[39m 请求类型:GET请求url:/rapserver/img/logo.png请求参数：{}
+[log][2019/12/25 21:02:42][function responseData(ret, request, response, type,isFile) ]:请求结果为静态文件：D:/git/rapserver-github/rapserver/static/dest/rapserver/img/logo.png
+[log][2019/12/25 21:02:42][function (req,callback) ]:累计请求:[31m34[39m 请求类型:GET请求url:/rapserver/css/iconmoon/fonts/icomoon.ttf请求参数：{"a0opvm":""}
+[log][2019/12/25 21:02:42][function responseData(ret, request, response, type,isFile) ]:请求结果为静态文件：D:/git/rapserver-github/rapserver/static/dest/rapserver/css/iconmoon/fonts/icomoon.ttf
+[log][2019/12/25 21:02:43][function (req,callback) ]:累计请求:[31m35[39m 请求类型:GET请求url:/root/get请求参数：{}
+[log][2019/12/25 21:02:43][function responseData(ret, request, response, type,isFile) ]:请求结果application/json
+[log][2019/12/25 21:02:43][function responseData(ret, request, response, type,isFile) ]:请求结果application/json
+[log][2019/12/25 21:02:44][function (req,callback) ]:累计请求:[31m36[39m 请求类型:GET请求url:/rapserver/favicon.ico请求参数：{"rootId":"rapserver"}
+[log][2019/12/25 21:02:44][function responseData(ret, request, response, type,isFile) ]:请求结果为静态文件：D:/git/rapserver-github/rapserver/static/dest/rapserver/favicon.ico

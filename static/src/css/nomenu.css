@@ -1,0 +1,12 @@
+.nomenu header{
+	display: none;
+}
+.nomenu #sidebar{
+	display: none;
+}
+.nomenu #main-content{
+    margin-left: 0px;
+}
+.nomenu .main-content-header{
+	display:none
+}

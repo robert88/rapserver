@@ -1,0 +1,94 @@
+.topsearch {
+	height: 90px;
+	margin-bottom: 20px;
+}
+.ai-topsearch {
+	overflow: hidden;
+	background: #fff;
+}
+
+.ai-topsearch {
+	-webkit-transition: all .3s;
+	transition: all .3s;
+	top: -60px;
+}
+.ai-topsearch {
+	font: 12px/1.5 tahoma,microsoft yahei,\\5FAE\8F6F\96C5\9ED1;
+}
+@media screen and (min-width: 1350px){
+	#J_SiteNav .site-nav-bd, .ai-topsearch .con-wrap {
+		width: 1350px;
+	}
+}
+
+	.con-wrap {
+		width: 990px;
+		_width: 990px;
+		margin: 0 auto;
+		overflow: hidden;
+	}
+.ai-topsearch .search-wrap {
+	float: left;
+	width: 100%;
+}
+.ai-topsearch .search {
+	margin-left: 278px;
+	margin-right: 95px;
+}
+.ai-topsearch .search .search-border {
+	border: 2px solid #ff4200;
+	border-right: 0;
+	height: 34px;
+	margin-top: 25px;
+	position: relative;
+}
+.ai-topsearch .search .text-wrap {
+	display: block;
+	overflow: hidden;
+	padding: 6px 10px 5px;
+	padding-right: 110px;
+	_width: 318px;
+}
+.ai-topsearch .search .submit {
+	width: 95px;
+	height: 34px;
+	border: 0 solid #ff4200;
+	position: absolute;
+	top: 0;
+	right: 0;
+	background-color: #ff4200;
+	color: #fff;
+	font-size: 16px;
+}
+@media screen and (min-width: 1350px){
+	.ai-topsearch .mainNav {
+		width: 850px;
+	}
+}
+
+	.ai-topsearch .mainNav {
+		overflow: hidden;
+		font-size: 12px;
+		float: left;
+		width: 540px;
+		height: 27px;
+		_margin-left: 40px;
+	}
+.ai-topsearch .mainNav li {
+	float: left;
+	border-right: 1px solid #fff;
+	margin-right: 10px;
+	margin-top: 10px;
+	line-height: 10px;
+	height: 12px;
+	*height: 14px;
+	*vertical-align: middle;
+	*line-height: 16px;
+}
+.ai-topsearch .mainNav .red a {
+	color: #ef470f;
+}
+.ai-topsearch a {
+	color: #333;
+	text-decoration: none;
+}

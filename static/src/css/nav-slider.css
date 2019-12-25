@@ -1,0 +1,72 @@
+#sidebar{position:absolute;left:-190px;top:0;width:190px;background: #fff;ine-height: 50px;z-index: 100}
+#sidebar .slide-nav-list{border-top:1px solid #c1c1c1;border-bottom:1px solid #c1c1c1;padding:20px 15px;}
+#sidebar .slide-nav-list i{margin-right: 10px;width: 20px;display: inline-block;margin-top: -3px;vertical-align: middle}
+#sidebar .slide-nav-list li{padding-top: 10px}
+#sidebar .sidebar-menu-title{background: url(/public/images/timg.jpg) no-repeat;padding:20px 15px;color:#fff;}
+#sidebar .sidebar-menu-footer{color:#999}
+.sidebar-mask{position:fixed;width: 100%;height: 100%;z-index: -99;background: rgba(0,0,0,.2);    top: 0;  left: 0;opacity: 0;}
+.mini-menu.sidebar-mask{opacity: 1;z-index: 99;}
+.mini-menu#sidebar{left:0}
+
+#sidebar-collapse{display: none;}
+.nomenu .bottomSubMenu{display: none;}
+.bottomSubMenu-fix{height: 50px;}
+.bottomSubMenu{
+	height:50px;
+	bottom:0;
+	position: fixed;
+	width: 100%;
+	left:0;
+}
+.bottomSubMenu .wrap{
+	padding-left:0 ;
+	padding-right:0 ;
+}
+.bottomSubMenu .wrap>.col{
+	height: 50px;
+	line-height: 50px;
+	border-top: 1px solid #00a0e9;
+}
+.bottomSubMenu .wrap>.col>.col4>a{
+	display: block;
+}
+.bottomSubMenu .wrap>.col>.col4{
+	background: #1899d4;
+	color: #fff;
+	font-size: 16px;
+	text-align: center;
+	border-right: 1px solid #52beef;
+	position: relative;
+}
+.bottomSubMenu .wrap>.col>.col4:last-child{
+	border-right: none
+}
+.bottomSubMenu .wrap>.col>.col4 dl{color: #666;background: #f9fcfd;text-align:left;padding:10px;line-height:30px;transform: scale(0,0);opacity:0;transition: 0.5s;position: absolute;bottom:60px;width: 100%;    box-shadow: 0px 0px 5px 0 rgba(0, 0, 0, 0.2);}
+.bottomSubMenu .wrap>.col>.col4 dl.active{transform: scale(1,1);opacity:1;}
+.bottomSubMenu .wrap>.col>.col4 dl .allow{
+	margin-left:-10px; left:50%;top:100%;position:absolute;width: 0;height: 0;
+	border-left:10px solid transparent;
+	border-right:10px solid transparent;
+	border-bottom:none;
+	border-top: 10px solid #d8dbdc}
+.bottomSubMenu .wrap>.col>.col4 dl .allow:after{    left: -10px;
+	top: -11px;
+	position: absolute;
+	z-index: 0;
+	width: 0;
+	height: 0;
+	border-left: 10px solid transparent;
+	border-right: 10px solid transparent;
+	content: " ";
+	border-bottom: none;
+	border-top: 10px solid #f9fcfd;;
+}
+.bottomSubMenu .wrap>.col>.col4 dl dd a{
+	display: block;
+}
+.bottomSubMenu .wrap>.col>.col4 dl dd i{
+	width: 18px;
+	display: inline-block;
+	vertical-align: middle;
+	text-align: center;
+}

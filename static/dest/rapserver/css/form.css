@@ -1,0 +1,204 @@
+select, input {
+	font-weight: inherit;
+	color: inherit;
+	font-size: inherit;
+	outline: 0;
+	outline-offset:0;
+	border: 1px solid #e1e1e1;
+}
+select{
+	box-sizing: content-box;
+}
+
+input[type=radio], input[type=checkbox] {
+	vertical-align: middle;
+}
+
+input:focus, textarea:focus, button:focus, select:focus {
+	outline: 0;
+	border: 1px solid #acadc8;
+}
+select {
+	appearance:none;
+	-moz-appearance:none;
+	-webkit-appearance:none;
+}
+
+select::-ms-expand { display: none; }
+::-webkit-input-placeholder{	font-weight: inherit;
+	color: #bbb;
+	font-size: inherit;}
+:-moz-placeholder{	font-weight: inherit;
+	color: #bbb;
+	font-size: inherit;}                  /* FirefoxÃ§â€°Ë†Ã¦Å“Â¬4-18 */
+::-moz-placeholder{	font-weight: inherit;
+	color: #bbb;
+	font-size: inherit;}                  /* FirefoxÃ§â€°Ë†Ã¦Å“Â¬19+ */
+:-ms-input-placeholder{	font-weight: inherit;
+	color: #bbb;
+	font-size: inherit;}           /* IEÃ¦ÂµÂÃ¨Â§Ë†Ã¥â„¢Â¨ */
+fieldset {
+	border: 0
+}
+
+.label-radio-group input{
+	display: none;
+}
+.label-radio-group i{
+	display:inline-block;
+}
+.validError input,.validError select{
+	border:1px solid #da0e0e;
+}
+.validItem{
+	position:relative;
+}
+.validErrMsg{
+	display: none;
+	padding-bottom: 10px;
+	margin-top: -10px;
+	top:100%;
+	line-height: 23px;
+	font-size: 14px;
+}
+.validError .validErrMsg{
+	color:#da0e0e;
+	display: block;
+}
+.validIcon{
+	display: none;
+	position: absolute;
+	top: 50%;
+	margin-top: -13px;
+	right: -30px;
+}
+.validError .validIcon{
+	color:#da0e0e;
+	display: block;
+}
+
+
+.label-checkbox input:checked + .fa-check{
+	display: block;
+	font-size: 14px;
+	top: 6px;
+	left: 2px;
+}
+.label-checkbox{
+	position:relative;
+	width: 20px;
+	display: block;
+	min-height: 20px;
+	padding-left:30px;
+}
+.label-checkbox .fa-check,.label-checkbox .fa-square-o{
+	position:absolute;
+	left:0;
+	font-size: 23px;
+	top: 3px;
+}
+
+.form-group{position:relative;}
+.form-group input,
+.form-group textarea
+{
+	display: block;
+	width:100%;
+	margin-top:10px;
+	font-size: inherit;
+}
+.form-group>i{
+	color: #CCCCCC;
+	display: block !important;
+	font-size: 16px;
+	height: 16px;
+	top: 34px;
+	margin: 9px 2px 4px 10px;
+	position: absolute !important;
+	text-align: center;
+	width: 16px;
+	z-index: 1;
+}
+.form-control {
+	border: 1px solid #cad2db;
+	padding: 0 5px 0 30px;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	border-radius: 5px;
+	line-height: 36px;
+	margin-bottom: 10px;
+	/*font-size: 14px;*/
+	color: #717171;
+	font-family: Arial;
+}
+.form-control.form-no-icon{
+	padding: 0 5px 0 5px;
+}
+.form-group .captcha-code-img {
+	position: absolute;
+	right: 0;
+	top: 32px;
+}
+.form-group .btn-send-code {
+	position: absolute;
+	right: 1px;
+	top: 30px;
+}
+
+.label-checkbox input,
+.label-checkbox  .fa-check{
+	display: none;
+}
+.J-select{position:relative;}
+.J-select .fa-angle-down{position:absolute;right: 9px;font-size: 23px;top: 3px;}
+.J-select.current .J-select-option{display:block;border: 1px solid #dbe0e6;margin-top: -11px;padding: 10px;margin: -11px 0px 0;box-shadow: 0 3px 3px rgba(0,0,0,0.1);position: absolute;width: 100%;background-color: #fff;z-index: 10;border-radius: 5px;}
+.J-select-option{display:none;}
+.J-select-option .option{
+	display:block;
+	border-bottom: 1px solid #e7e7e7;
+	color: #555555;
+	padding: 5px;
+	cursor: pointer;
+}
+.J-select-option .option .checkbox-wrap{
+	display: inline-block;
+}
+.J-select-option .option p{display:inline-block}
+.J-select-option .option:last-child{
+	border-bottom:none;
+}
+.J-select-option .option:hover{background:#fff;border-color: #70afc4;color:#70afc4;}
+.form-group-inline{
+	position:relative;
+}
+.J-select-option .option:hover:last-child{
+	border-bottom:none;
+}
+.form-group-inline label{
+	line-height: 33px;
+	width: 30%;
+	display: inline-block;
+	text-align: right;
+	padding-right:10px;
+}
+.form-group-inline .form-control,.form-group-inline .form-control-select{padding: 0 5px 0 5px;width: 60%;display: inline-block;}
+.form-group-inline .form-control-select .form-control{width:100%;}
+.form-group-inline .form-control-select{padding:0}
+.template-tr td{background: #f5ecdf !important;}
+.form-group-block{
+	position:relative;
+}
+.form-group-block>i{
+	color: #CCCCCC;
+	display: block !important;
+	font-size: 16px;
+	height: 16px;
+	top: 3px;
+	margin: 9px 2px 4px 10px;
+	position: absolute !important;
+	text-align: center;
+	width: 16px;
+	z-index: 1;
+}
+.ipt-error{display: none}
+.validError .ipt-error{display: block}

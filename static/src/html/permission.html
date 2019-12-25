@@ -1,0 +1,184 @@
+<useTemplate src="/template/index.html" replaceWith="root" config="/html/json/permission.js"></useTemplate>
+<link rel="stylesheet" href="/css/html/permission.css">
+
+<div class="permission-content wrap">
+	<ul class="col p10 module-static">
+		<li class="col6">
+			<div class="bd m10 ptb20 plr20">
+				<h3 class="bd bd-warning bd-2 bd-left pl10">配置权限</h3>
+				<form id="addPermission" autocomplete="off">
+					<div class="col mt20 lh30  J-validItem">
+						<div class="col3 tr pr10 text">权限名</div>
+						<div class="col8 plr10 ipt-wrap"><input type="text" class="ipt fw12 h30 pl5 " name="name" check-type="required" data-required-msg="必填字段" placeholder="权限名称" data-blur="false" data-focus="false"></div>
+						<div class="col1  t-danger  pr10"><p class="ipt-error J-valid-msg"></p></div>
+					</div>
+					<div class="col mt20 lh30  J-validItem">
+						<div class="col3 tr pr10 text">who（作用在什么地方）</div>
+						<div class="col8 plr10  ">
+							<div class="J-select   ">
+								<input class="ipt fw12 h30 pl5 J-select-text" type="text" placeholder="请选择类型" readonly="readonly">
+								<input class=" J-select-value" name="type" type="hidden">
+								<span class="fa-angle-down"></span>
+								<ul class="J-select-option ease"></ul>
+							</div>
+							<div class="J-select mt5  ">
+								<input class="ipt fw12 h30 pl5  J-select-text" type="text" placeholder="请选择文件或者action" readonly="readonly">
+								<input class=" J-select-value" name="source" type="hidden">
+								<span class="fa-angle-down"></span>
+								<ul class="J-select-option ease"></ul>
+							</div>
+						</div>
+						<div class="col1 t-danger pr10"><p class="ipt-error J-valid-msg"></p></div>
+					</div>
+					<div class="col mt20 lh30  J-validItem">
+						<div class="col3 tr pr10 text">how（实现什么控制）</div>
+						<div class="col8 plr10  ipt-wrap">
+							<div class="J-select J-mutil-select   ">
+								<input class="ipt fw12 h30 pl5  J-select-text" type="text" placeholder="请选择操作类型" readonly="readonly">
+								<input class=" J-select-value" name="type" type="hidden">
+								<span class="fa-angle-down"></span>
+								<ul class="J-select-option ease">
+									<li class="option" data-name="Select All" data-value="all">
+										<label class="checkbox-wrap">
+											<input type="checkbox" class="J-select-all-ipt"><span></span>
+											<p>全部</p>
+										</label>
+									</li>
+									<li class="option" data-value="add" data-name="添加">
+										<label class="checkbox-wrap">
+											<input type="checkbox" class="J-select-all-ipt"><span></span>
+											<p>添加</p>
+										</label>
+									</li>
+									<li class="option" data-value="limit" data-name="限制">
+										<label class="checkbox-wrap">
+											<input type="checkbox" class="J-select-all-ipt"><span></span>
+											<p>限制</p>
+										</label>
+									</li>
+									<li class="option" data-value="update" data-name="修改">
+										<label class="checkbox-wrap">
+											<input type="checkbox" class="J-select-all-ipt"><span></span>
+											<p>修改</p>
+										</label>
+									</li>
+									<li class="option" data-value="del" data-name="删除">
+										<label class="checkbox-wrap">
+											<input type="checkbox" class="J-select-all-ipt"><span></span>
+											<p>删除</p>
+										</label>
+									</li>
+									<li class="option" data-value="read" data-name="访问">
+										<label class="checkbox-wrap">
+											<input type="checkbox" class="J-select-all-ipt"><span></span>
+											<p>访问</p>
+										</label>
+									</li>
+									<li class="option" data-value="account" data-name="登录">
+										<label class="checkbox-wrap">
+											<input type="checkbox" class="J-select-all-ipt"><span></span>
+											<p>需要登录</p>
+										</label>
+									</li>
+								</ul>
+							</div>
+						</div>
+						<div class="col1 t-danger pr10"><p class="ipt-error J-valid-msg"></p></div>
+					</div>
+					<div class="col mt20 lh30">
+						<div class="col3 tr pr10 space-text">&nbsp;</div>
+						<div class="col8 plr10 btn-wrap"><a class="btn-success btn J-submitBtn w130 ">添加</a></div>
+					</div>
+				</form>
+			</div>
+		</li>
+		<li class="col6">
+			<div class="bd m10 ptb20 plr20 index-static-item">
+				<h3 class="bd bd-warning bd-2 bd-left pl10">已配置的权限</h3>
+				<ul class="col mt20" id="permissionList">
+				</ul>
+			</div>
+		</li>
+	</ul>
+	<ul class="col p10">
+		<li class="col6">
+			<div class="bd bd-warning m10 ptb20  plr20 ">
+				<h3 class="bd bd-info bd-2 bd-left pl10">配置角色权限</h3>
+				<form id="addRole" autocomplete="off">
+					<div class="col mt20 lh30  J-validItem">
+						<div class="col3 tr pr10 text">角色名称</div>
+						<div class="col8 plr10 ipt-wrap"><input type="text" class="ipt fw12 h30 pl5 " name="name" check-type="required" data-required-msg="必填字段" placeholder="角色名称" data-blur="false" data-focus="false"></div>
+						<div class="col1  t-danger  pr10"><p class="ipt-error J-valid-msg"></p></div>
+					</div>
+					<div class="col mt20 lh30  J-validItem">
+						<div class="col3 tr pr10 text">拥有权限</div>
+						<div class="col8 plr10  ipt-wrap">
+							<div class="J-select J-mutil-select  ">
+								<input class="ipt fw12 h30 pl5  J-select-text" type="text" placeholder="请选择操作类型" readonly="readonly">
+								<input class=" J-select-value" name="type" type="hidden">
+								<span class="fa-angle-down"></span>
+								<ul class="J-select-option ease">
+									<li class="option" data-name="Select All" data-value="all">
+										<label class="checkbox-wrap">
+											<input type="checkbox" class="J-select-all-ipt"><span></span>
+											<p>全部</p>
+										</label>
+									</li>
+									<li class="option" data-value="add" data-name="添加">
+										<label class="checkbox-wrap">
+											<input type="checkbox" class="J-select-all-ipt"><span></span>
+											<p>添加</p>
+										</label>
+									</li>
+									<li class="option" data-value="limit" data-name="限制">
+										<label class="checkbox-wrap">
+											<input type="checkbox" class="J-select-all-ipt"><span></span>
+											<p>限制</p>
+										</label>
+									</li>
+									<li class="option" data-value="update" data-name="修改">
+										<label class="checkbox-wrap">
+											<input type="checkbox" class="J-select-all-ipt"><span></span>
+											<p>修改</p>
+										</label>
+									</li>
+									<li class="option" data-value="del" data-name="删除">
+										<label class="checkbox-wrap">
+											<input type="checkbox" class="J-select-all-ipt"><span></span>
+											<p>删除</p>
+										</label>
+									</li>
+									<li class="option" data-value="read" data-name="访问">
+										<label class="checkbox-wrap">
+											<input type="checkbox" class="J-select-all-ipt"><span></span>
+											<p>访问</p>
+										</label>
+									</li>
+									<li class="option" data-value="account" data-name="登录">
+										<label class="checkbox-wrap">
+											<input type="checkbox" class="J-select-all-ipt"><span></span>
+											<p>需要登录</p>
+										</label>
+									</li>
+								</ul>
+							</div>
+						</div>
+						<div class="col1 t-danger pr10"><p class="ipt-error J-valid-msg"></p></div>
+					</div>
+					<div class="col mt20 lh30">
+						<div class="col3 tr pr10 space-text">&nbsp;</div>
+						<div class="col8 plr10 btn-wrap"><a class="btn-success btn J-submitBtn w130 ">添加</a></div>
+					</div>
+				</form>
+			</div>
+		</li>
+		<li class="col6">
+			<div class="bd bd-warning m10 ptb20 plr20 index-static-item">
+				<h3 class="bd bd-info bd-2 bd-left pl10">已配置的角色</h3>
+				<ul class="col mt20" id="roleList">
+				</ul>
+			</div>
+		</li>
+	</ul>
+</div>
+<script src="/js/html/permission.js"></script>

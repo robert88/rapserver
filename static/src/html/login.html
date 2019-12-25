@@ -1,0 +1,26 @@
+<useTemplate src="/template/login.html" replaceWith="root" config="/html/json/login.js"></useTemplate>
+<link rel="stylesheet" href="/css/html/login.css">
+<div class="loginWrap tc">
+    <div class="wrap pb50">
+        <div class="pb30"><img src="/img/logo.png" alt=""></div>
+        <h2>登录</h2>
+        <form id="loginForm">
+            <fieldset class="mt20 relative J-validItem tl">
+                <i class="fa-user abs"></i>
+                <input type="text"  class="fw12 ipt  h30 pl5 "  name="account" check-type="required" data-required-msg="必填字段" placeholder="账号" data-blur="false">
+                <p class="ipt-error J-valid-msg t-danger"></p>
+            </fieldset>
+            <fieldset class="mt30 relative J-validItem tl">
+                <i class="fa-lock abs"></i>
+                <input type="password"  class="fw12 ipt  h30 pl5 "  name="password" check-type="required" data-required-msg="必填字段" placeholder="密码" data-blur="false">
+                <p class="ipt-error J-valid-msg t-danger"></p>
+            </fieldset>
+            <fieldset class="mt30">
+                <a class="fw12 btn btn-danger J-submitBtn ">登录</a>
+            </fieldset>
+        </form>
+        <div class="login-info mt30 col"><a href="/html/register.html" class="go-register a-link-danger ml5 fl">注册</a><a href="" class="go-findPwd a-link fr mr5">找回密码</a></div>
+    </div>
+</div>
+
+<script src="/js/html/login.js"></script>

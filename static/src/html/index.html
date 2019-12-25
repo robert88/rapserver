@@ -1,0 +1,91 @@
+<useTemplate src="/template/index.html" replaceWith="root" config="/html/json/root.js"></useTemplate>
+<link rel="stylesheet" href="/css/html/index.css">
+
+<div class="index-content wrap">
+	<ul class="col p10 module-static">
+		<li class="col6">
+			<div class="bd m10 p20  index-static-item">
+				<h3 class="bd bd-warning bd-2 bd-left pl10">配置静态路径</h3>
+				<form id="addRootForm" autocomplete="off" >
+					<div class="col mt20 lh30  J-validItem">
+						<div class="col3 tr pr10 text">添加根路径Id</div>
+						<div class="col8 plr10 ipt-wrap"><input id="staticRootId" type="text" class="ipt fw12 h30 pl5 " name="rootId" check-type="required" data-required-msg="必填字段" placeholder="提示：根路径id可以使用相同目录结构下文件不冲突" data-blur="false" data-focus="false" ></div>
+						<div class="col1  t-danger  pr10"><p class="ipt-error J-valid-msg"></p></div>
+
+					</div>
+					<div class="col mt20 lh30  J-validItem">
+						<div class="col3 tr pr10 text">添加根路径</div>
+						<div class="col8 plr10  ipt-wrap"><input id="staticRootPath" type="text" class="ipt fw12 h30  pl5 " name="path" check-type="required" data-required-msg="必填字段" data-blur="false" data-focus="false"  placeholder="路径"></div>
+						<div class="col1 t-danger pr10"><p class="ipt-error J-valid-msg"></p></div>
+					</div>
+					<div class="col mt20 lh30">
+						<div class="col3 tr pr10 space-text">&nbsp;</div>
+						<div class="col8 plr10 btn-wrap"><a class="btn-success btn J-submitBtn w130 ">添加</a></div>
+					</div>
+				</form>
+			</div>
+		</li>
+		<li class="col6">
+			<div class="bd m10 ptb20 plr20 index-static-item">
+				<h3 class="bd bd-warning bd-2 bd-left pl10">已配置的路径</h3>
+				<ul class="col mt20" id="rootInfo">
+
+				</ul>
+			</div>
+		</li>
+	</ul>
+</div>
+	<div style="background: url(https://cdn.aoscdn.com/img/video-editor/new/bg-blur.jpg) no-repeat center center;height:60px" class="tc fs32 lh60 t-white">
+		nodejs
+	</div>
+	<div class="index-content wrap">
+	<ul class="module-cpu-heap col mt20" >
+		<li class="col6 module-cpu-wrap plr20">
+			<div class="info">
+				<span class="title t-success"></span>
+				<span class="speed  t-danger ml10"></span>M
+				<span class="cpunum  t-warning ml10"></span>核
+				<span class="percent  t-info ml10"></span>%
+			</div>
+			<div class="canvas"></div>
+		</li>
+		<li class="col6 module-heap-wrap plr20">
+			<div class="info">
+				<span class="">总内存</span><span class="totalMemory t-danger"></span>G
+				<span class="ml10">已用内存</span><span class="useMemory  t-warning"></span>G
+			</div>
+			<div class="canvas"></div>
+		</li>
+	</ul>
+</div>
+
+
+
+
+	<!--<div class="wrap ptb20">-->
+		<!--<div class="bg-info pt20"></div>-->
+		<!--<div class="p20  pb50 bg-light-info">-->
+			<!--<h3 class="bd bd-info bd-2 bd-left pl10">最新动态</h3>-->
+			<!--<ul id="news-list" class=" pt20 mt20 bd-top bd-2 bd-info">-->
+				<!--<li class="col">-->
+					<!--<div class="news-left"><img src="/img/logo.png"></div>-->
+					<!--<div class="news-right">-->
+						<!--<h4 class="mt5">title</h4>-->
+						<!--<p class="mt5">sd fk sjd fs士 吊 死扶伤  士大夫士大 夫是 大 夫士 大夫  dfk</p>-->
+						<!--<p class="t-muted mt5 f12 info"><span class="time">20160904</span> <span class="auth fr">robert</span></p>-->
+					<!--</div>-->
+				<!--</li>-->
+				<!--<li class="col ">-->
+					<!--<div class="news-left"><img src="/img/logo.png"></div>-->
+					<!--<div class="news-right">-->
+						<!--<h4 class="mt5">title</h4>-->
+						<!--<p class="mt5">sd fk sjd fs士 吊 死扶伤  士大夫士大 夫是 大 夫士 大夫  dfk</p>-->
+						<!--<p class="t-muted mt5 f12 info"><span class="time">20160904</span> <span class="auth fr">robert</span></p>-->
+					<!--</div>-->
+				<!--</li>-->
+			<!--</ul>-->
+		<!--</div>-->
+	<!--</div>-->
+
+</div>
+<script src="/js/html/index.js"></script>

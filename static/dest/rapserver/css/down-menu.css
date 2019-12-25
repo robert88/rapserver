@@ -1,0 +1,6 @@
+.down-menu-wrap{display: none;}
+.down-menu-wrap.active{display: block}
+.down-menu-wrap{position:absolute;left:0;width:100%;top:100%;box-shadow: 0px 2px 5px rgba(0,0,0,0.2);background: #fff;padding: 5px 0;z-index: 1000;line-height: 1.2}
+.down-menu-wrap>dd{padding: 5px;/* display: none; */}
+.down-menu-wrap>dd.matched{display: block;}
+.down-menu-wrap>dd:hover{background:#f7f7f7}

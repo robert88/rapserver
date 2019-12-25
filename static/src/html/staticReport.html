@@ -1,0 +1,27 @@
+<useTemplate src="/template/index.html" replaceWith="root" config="/html/json/staticReport.js"></useTemplate>
+<link rel="stylesheet" href="/css/html/staticReport.css">
+<div class="staticReport-wrap">
+    <div class="wrap">
+        <h3 class="mt30 mb10 pb10 bd-bottom bd-warning">上传文件</h3>
+        <form id="uploadFileForm">
+            <div class="uploadFile-wrap">
+                <div class="upload_file_background tc mtb20 ptb20 bg-light-muted"><img height="52" src="/img/upload-file.svg" width="204"></div>
+                <div class="text tc"><span>拖拽文件或点击此处上传文件</span></div>
+                <div class="file-list"></div>
+            </div>
+            <div class="upload-info mt20">
+                <div class="mt20 lh30  J-validItem">
+                    <div class="plr10 text">提交说明</div>
+                    <div class=" plr10 ipt-wrap"><input id="staticRootId" type="text" class="ipt fw12 h30 pl5 " name="rootId" check-type="required" data-required-msg="必填字段" placeholder="提示：根路径id可以使用相同目录结构下文件不冲突" data-blur="false" data-focus="false"></div>
+                    <div class="t-danger  pr10"><p class="ipt-error J-valid-msg"></p></div>
+                </div>
+            </div>
+            <div class="mt20 lh30 mb30">
+
+                <div class="plr10 btn-wrap"><a class="btn-success btn J-submitBtn w130">提交</a></div>
+            </div>
+        </form>
+    </div>
+</div>
+<script src="/js/RBT/getLocalFile.js"></script>
+<script src="/js/html/staticReport.js"></script>
