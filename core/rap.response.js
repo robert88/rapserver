@@ -96,7 +96,7 @@ function getFileRealPath(url,responseRootId){
                 if(staticFileMap[id]&&staticFileMap[id][url]){
                     statInfo = staticFileMap[id][url];
 				}else{
-                    refreshOne(absolutePath,id,url);
+                    statInfo = refreshOne(absolutePath,id,url);
 				}
                 statInfo.realPath = absolutePath;
 				statInfo.rootId = id;
@@ -144,30 +144,18 @@ function responseData(ret, request, response, type,isFile) {
     }else{
         contentEncoding =  null
 	}
-
 	var headerOption = {
-		"Content-Type": type,
         "X-Powered-By": "robert-rap-server",
         "X-Client-Ip":"",
 		"X-root-id":fileStatInfo&&fileStatInfo.rootId||""
-
-		// "Set-Cookie": request.cookie
-		//"Access-Control-Allow-Headers": "x-requested-with"
-		// accept-ranges: bytes
-		// access-control-allow-origin: *
-
-		// content-length: 3265
-		// content-type: image/jpeg
-		// date: Wed, 10 Oct 2018 14:44:47 GMT
-		// age: 1920427
-		// cache-control: max-age=2628000
-		// etag: 2a4ead0189e1dbd13490adeba966e661
-		// expires: Thu, 18 Oct 2018 19:17:42 GMT
-		// last-modified: Thu, 01 Jan 1970 00:00:00 GMT
-		// ohc-response-time: 1 0 0 0 0 0
-		// server: JSP3/2.0.14
-		// status: 200
 	};
+
+	if(isFile&&(type[0]=="unknow"||type=="unknow")){
+		headerOption["Accept-Ranges"] = "bytes";
+	}else{
+		headerOption["Content-Type"]= type;
+	}
+	
 
 	//只要有cookie就使用text/plain
 	if(!request.cookies.RAPID){
@@ -200,12 +188,12 @@ function responseData(ret, request, response, type,isFile) {
 		let filePath = fileStatInfo.realPath;
 		rap.log("请求结果为静态文件：", filePath);
 		//这些文件已经经过了高度压缩
-		if ( /(jpg)|(ppt)|(doc)|(ico)|(gif)|(png)|(mp3)|(mp4)|(wav)/.test(path.extname(filePath)) ) {
-			zip = null;
-		}else{
+		if ( /(xhtml)|(html)|(htm)|(css)|(js)|(less)|(txt)|(md)|(stylus)|(json)|(xml)/.test(path.extname(filePath)) ) {
 			//只有文件才可以使用压缩
 			zip = zipType();
 			headerOption["Content-Encoding"]=contentEncoding;
+		}else{
+			zip=null;
 		}
 
 		if(fileStatInfo["Last-Modified"]){
@@ -228,21 +216,22 @@ function responseData(ret, request, response, type,isFile) {
 		var requestEtag = request.headers["if-none-match"];
         var eTagCheck = requestLastModify&&requestEtag==fileStatInfo["ETag"];
         var lastModifyCheck = requestLastModify&&requestLastModify==fileStatInfo["Last-Modified"];
-		// if(request.headers.range && /(mp3)|(mp4)|(wav)/.test(path.extname(filePath)) && fileStatInfo.size ){
-		// 	let rangeSize = (1*(request.headers.range.replace(/bytes=/,"")&&request.headers.range.replace("-","")));
-		// 	if(rangeSize<fileStatInfo.size){
-         //        let splitFile = 204800;
-         //        headerOption["Content-Length"]=splitFile;
-         //        headerOption["Content-Range"]="bytes {0}-{1}/{2}".tpl(rangeSize,rangeSize+splitFile,fileStatInfo.size);
-         //        response.writeHead(206, headerOption);
-        //
-		// 	}else{
-         //        response.writeHead(406, headerOption);
-         //        response.end();
-		// 	}
-        //
-		// }
-        if(eTagCheck||lastModifyCheck){
+		if(request.headers.range && /(mp3)|(mp4)|(wav)/.test(path.extname(filePath)) && fileStatInfo.size ){
+			// let rangeSize = request.headers.range.replace(/bytes=/,"")
+			// let s = toFloat(rangeSize.split("-")[0]);
+			// let e = toFloat(rangeSize.split("-")[1]);
+			// if(s<fileStatInfo.size){
+            //     let splitFile = 204800;
+                headerOption["Content-Length"]=fileStatInfo.size;
+                headerOption["Content-Range"]="bytes 0-{0}/{1}".tpl(fileStatInfo.size-1,fileStatInfo.size);
+                response.writeHead(206, headerOption);
+				createWriteFileStream(filePath, response, zip);
+			// }else{
+            //     response.writeHead(406, headerOption);
+            //     response.end();
+			// }
+        
+		}else if(eTagCheck||lastModifyCheck){
             response.writeHead(304, headerOption);
             response.end();
         }else{
@@ -257,6 +246,14 @@ function responseData(ret, request, response, type,isFile) {
 	}
 
 
+}
+
+function toFloat(val){
+	if(!val){
+		return 0
+	}else{
+		return val.trim()*1;
+	}
 }
 
 /**

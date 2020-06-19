@@ -61,6 +61,7 @@ function fileToAction(file,consoleStack,actionMap,actionPath){
 exports = module.exports = {
     init (actionPath) {
 
+        console.log("开始扫描action",actionPath)
         if(!actionPath){
             return;
         }
@@ -83,7 +84,7 @@ exports = module.exports = {
         rap.info("action map：", consleStack);
 
         consleStack = null;
-
+        console.log("结束扫描action")
         return actionMap
     }
 };
