@@ -24,9 +24,9 @@ const path = require("path");
 var requestFilter = require("@/core/rap.request.js");
 var handleResponse = require("@/core/rap.response.js");
 
-if(process.env["NODE_ENV"]=="dev"){
-    require("@/static/build.config.js");
-}
+// if(process.env["NODE_ENV"]=="dev"){
+//     require("@/static/build.config.js");
+// }
 /**
  * 清除response;防止内存泄漏
  * 报错的时候要清除掉
@@ -190,23 +190,23 @@ if(process.env.NODE_ENV=="dev" && rap.masterStatus!="restart"){
 
     require("@/rap.browser.js");
 
-    var addWatch = require("@/lib/rap.watch.js");
+    // var addWatch = require("@/lib/rap.watch.js");
 
-    addWatch(resolve("@/lib"),function (changeFiles) {
-        checkNeedUpdate(changeFiles);
-    });
+    // addWatch(resolve("@/lib"),function (changeFiles) {
+    //     checkNeedUpdate(changeFiles);
+    // });
 
-    addWatch(resolve("@/core"),function (changeFiles) {
-        checkNeedUpdate(changeFiles);
-    });
+    // addWatch(resolve("@/core"),function (changeFiles) {
+    //     checkNeedUpdate(changeFiles);
+    // });
 
-    addWatch(rap.config.actionPath,function (changeFiles) {
-        checkNeedUpdate(changeFiles);
-    });
+    // addWatch(rap.config.actionPath,function (changeFiles) {
+    //     checkNeedUpdate(changeFiles);
+    // });
 
-    addWatch(rap.config.actionPermissionPath,function (changeFiles) {
-        checkNeedUpdate(changeFiles);
-    });
+    // addWatch(rap.config.actionPermissionPath,function (changeFiles) {
+    //     checkNeedUpdate(changeFiles);
+    // });
 
 
 }
