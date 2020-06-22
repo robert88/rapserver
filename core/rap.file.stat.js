@@ -72,6 +72,7 @@
         file = file.replace(pathMap[root],"");
         rap._staticFileMap[root] = rap._staticFileMap[root] || {};
         rap._staticFileMap[root][file] = stat;
+	            return stat
     }
 
     function findPermission(file,rootPath){
