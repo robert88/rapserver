@@ -86,8 +86,9 @@ exports = module.exports = function (req,callback) {
 		 * 这个是如果数据读取完毕就会执行的监听方法
 		 */
 		req.addListener("end", function () {
+		var getParams =   nodeUrl.parse(req.originURL, true).query;
+            req.params = Object.assign(getParams,qs.parse(postBuffer.join("")))
 
-            req.params = qs.parse(postBuffer.join(""));
 
             paramsTypeConvert(req.params);
 
